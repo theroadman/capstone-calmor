@@ -1,0 +1,21 @@
+*, html {
+  font-size: 16px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+/**************FOR WHOLE WEB**************/
+
+
+
+
+
+/*************************HEADER********************/
+
+header {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding: 10px 24px;
+
+}

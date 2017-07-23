@@ -15,7 +15,120 @@ header {
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
-  height: 64px;
-  padding: 10px 24px;
+  height: 4rem;
+  width: 100%;
+  border: none;
+}
 
+.brand, nav {
+  padding: 0.625rem 1.5rem;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+.brand {
+  font-weight: 800;
+}
+
+nav span {
+  margin: 0 1rem;
+}
+
+
+/*************************BANNER********************/
+.container {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  background-color: rgb(216, 216, 216);
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col-pic {
+  width: 60%;
+  height: 28rem;
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 2rem 2.5rem 2rem 1.5rem;
+  display: block;
+}
+
+.col-text {
+  width: 40%;
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  padding-right: 8rem;
+
+}
+
+.col-text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 1.5rem 0;
+  color: rgb(74, 74, 74);
+}
+
+.col-text span {
+  font-size: 1.5rem;
+  color: rgb(74, 74, 74);
+  margin: 1.5rem 0;
+  font-weight: 500;
+}
+
+.button {
+  width: 20rem;
+  padding: 0.9rem;
+  text-align: center;
+  background-color: rgb(74, 74, 74);
+  margin-top: 2rem;
+}
+
+.button a {
+  color: rgb(245, 245, 245);
+  font-size: 1.25rem;
+}
+
+
+
+/*****************************NEWS block ***************************/
+
+.news {
+  width: 100%;
+  display: block;
+  background-color: rgb(245, 245, 245);
+  margin: -2rem auto;
+  padding: 2rem 0;
+}
+
+
+.col-left {
+  width: 60%;
+  height: 28rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 2rem 2.5rem 2rem 1.5rem;
+  display: block;
+}
+
+.col-pic-two {
+  background-image: url("../images/information-main.jpg");
+  background-size: cover;
+  display: block;
+  margin-bottom: 2rem;
+  width: 100%;
+  height: 20rem;
+}
+
+.col-text-two {
+  display: block;
+  width: 100%;
 }

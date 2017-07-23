@@ -50,31 +50,28 @@ nav span {
   height: auto;
   background-color: rgb(216, 216, 216);
   display: inline-flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .col-pic {
-  width: 60%;
+  width: 100%;
   height: 24rem;
   background-image: url("../images/banner.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
-  margin: 2rem 2.5rem 2rem 1.5rem;
   display: block;
 }
 
 .col-text {
   width: 40%;
   font-family: 'Roboto', sans-serif;
-  display: block;
-
+  display: inline-flex;
+  flex-direction: column;
+  padding: 0 2.5rem;
 }
 
 .col-text h1 {
   font-size: 2.5rem;
   font-weight: bold;
-  margin: 1.5rem 0;
   color: rgb(74, 74, 74);
 }
 
@@ -90,14 +87,12 @@ nav span {
   padding: 0.9rem;
   text-align: center;
   background-color: rgb(74, 74, 74);
-  margin-top: 2rem;
 }
 
 .button a {
   color: rgb(245, 245, 245);
   font-size: 1.25rem;
 }
-
 
 
 /*****************************NEWS block ***************************/
@@ -112,25 +107,24 @@ nav span {
 .col-left {
   width: 60%;
   height: auto;
-  margin: 2rem 2.5rem 2rem 1.5rem;
-  display: flex;
-  flex-direction: column;
+  display: block;
+  margin: 2rem 1.5rem;
 }
 
-.col-pic-two {
+.col-left-pic {
   background-image: url("../images/information-main.jpg");
   background-size: cover;
   display: block;
   width: 100%;
-  height: 20rem;
+  height: 28rem;
 }
 
-.col-text-two {
+.col-left-text {
   display: block;
   width: 100%;
 }
 
-.col-text-two h2 {
+.col-left-text h2 {
   display: block;
   font-size: 2rem;
   font-family: 'Roboto', sans-serif;
@@ -139,16 +133,17 @@ nav span {
   margin: 2rem 0 1rem 0;
 }
 
-.col-text-two span {
+.col-left-text span {
   display: block;
   font-size: 1rem;
   color: rgb(74, 74, 74);
+  line-height: 1.35;
 }
 
 #author {
   font-size: 0.75rem;
   display: block;
-  margin-top: 0.5rem;
+  margin-top: 1.75rem;
   font-weight: bold;
   color: rgb(74, 74, 74);
 
@@ -156,9 +151,29 @@ nav span {
 /**************Right***************/
 
 .col-right {
-  width: 26.4375rem;
+  width: 40%;
   height: auto;
-  display: block;
-  padding-right: 4rem;
+  display: inline-flex;
   border-left: 1px solid rgb(216, 216, 216);
+  padding: 0 2.5rem;
+  flex-direction: column;
+}
+
+.col-right-1 {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.col-right-1 img {
+  width: 35%;
+  height: 35%;
+  padding: 2rem 0;
+}
+
+.col-right-text {
+  display: block;
+  font-size: 0.5rem;
+
 }

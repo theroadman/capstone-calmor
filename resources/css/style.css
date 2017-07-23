@@ -1,6 +1,7 @@
 *, html {
   font-size: 16px;
   font-family: 'PT Sans', sans-serif;
+  color: rgb(25, 25, 25);
 }
 
 /**************FOR WHOLE WEB**************/
@@ -36,12 +37,13 @@ nav span {
 }
 
 
-/*************************BANNER********************/
 .container {
   width: 100%;
   height: auto;
   display: block;
 }
+
+/*************************BANNER********************/
 
 .banner {
   width: 100%;
@@ -54,7 +56,7 @@ nav span {
 
 .col-pic {
   width: 60%;
-  height: 28rem;
+  height: 24rem;
   background-image: url("../images/banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -66,7 +68,6 @@ nav span {
   width: 40%;
   font-family: 'Roboto', sans-serif;
   display: block;
-  padding-right: 8rem;
 
 }
 
@@ -103,27 +104,23 @@ nav span {
 
 .news {
   width: 100%;
-  display: block;
+  height: auto;
+  display: inline-flex;
   background-color: rgb(245, 245, 245);
-  margin: -2rem auto;
-  padding: 2rem 0;
 }
-
 
 .col-left {
   width: 60%;
-  height: 28rem;
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: auto;
   margin: 2rem 2.5rem 2rem 1.5rem;
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .col-pic-two {
   background-image: url("../images/information-main.jpg");
   background-size: cover;
   display: block;
-  margin-bottom: 2rem;
   width: 100%;
   height: 20rem;
 }
@@ -131,4 +128,37 @@ nav span {
 .col-text-two {
   display: block;
   width: 100%;
+}
+
+.col-text-two h2 {
+  display: block;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: rgb(74, 74, 74);
+  margin: 2rem 0 1rem 0;
+}
+
+.col-text-two span {
+  display: block;
+  font-size: 1rem;
+  color: rgb(74, 74, 74);
+}
+
+#author {
+  font-size: 0.75rem;
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: rgb(74, 74, 74);
+
+}
+/**************Right***************/
+
+.col-right {
+  width: 26.4375rem;
+  height: auto;
+  display: block;
+  padding-right: 4rem;
+  border-left: 1px solid rgb(216, 216, 216);
 }

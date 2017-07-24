@@ -6,10 +6,6 @@
 
 /**************FOR WHOLE WEB**************/
 
-
-
-
-
 /*************************HEADER********************/
 
 header {
@@ -36,12 +32,12 @@ nav span {
   margin: 0 1rem;
 }
 
-
-.container {
-  width: 100%;
-  height: auto;
-  display: block;
+.news-left h2, .news-left span,
+.news-right-text h3, .news-right-text span,
+#author, .banner-right span, .banner-right h1 {
+  color: rgb(74, 74, 74);
 }
+
 
 /*************************BANNER********************/
 
@@ -51,33 +47,27 @@ nav span {
   background-color: rgb(216, 216, 216);
   display: inline-flex;
   align-items: center;
+  font-family: 'Roboto', sans-serif;
 }
 
-.col-pic {
-  width: 100%;
-  height: 24rem;
+.banner-left {
+  width: 60%;
+  height: 27rem;
+  display: block;
+  margin: 2rem 2.5rem 2rem 1.5rem;
   background-image: url("../images/banner.jpg");
   background-size: cover;
-  display: block;
+  flex-shrink: 0;
 }
 
-.col-text {
-  width: 40%;
-  font-family: 'Roboto', sans-serif;
-  display: inline-flex;
-  flex-direction: column;
-  padding: 0 2.5rem;
-}
-
-.col-text h1 {
+.banner-right h1 {
   font-size: 2.5rem;
+  padding-bottom: 1rem;
   font-weight: bold;
-  color: rgb(74, 74, 74);
 }
 
-.col-text span {
+.banner-right span {
   font-size: 1.5rem;
-  color: rgb(74, 74, 74);
   margin: 1.5rem 0;
   font-weight: 500;
 }
@@ -85,13 +75,15 @@ nav span {
 .button {
   width: 20rem;
   padding: 0.9rem;
+  margin: 2rem 0;
   text-align: center;
   background-color: rgb(74, 74, 74);
+  font-size: 1.25rem;
+  display: block;
 }
 
 .button a {
   color: rgb(245, 245, 245);
-  font-size: 1.25rem;
 }
 
 
@@ -99,45 +91,35 @@ nav span {
 
 .news {
   width: 100%;
-  height: auto;
   display: inline-flex;
   background-color: rgb(245, 245, 245);
 }
 
-.col-left {
+.news-left {
   width: 60%;
   height: auto;
-  display: block;
-  margin: 2rem 1.5rem;
+  margin: 2rem 1.5rem 2rem 1.5rem;
+  justify-content: center;
+  flex-direction: column;
+  flex-shrink: 0;
 }
 
-.col-left-pic {
+.news-left-img {
+  height: 21rem;
   background-image: url("../images/information-main.jpg");
   background-size: cover;
-  display: block;
-  width: 100%;
-  height: 28rem;
 }
 
-.col-left-text {
-  display: block;
-  width: 100%;
-}
-
-.col-left-text h2 {
-  display: block;
+.news-left h2 {
   font-size: 2rem;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  color: rgb(74, 74, 74);
-  margin: 2rem 0 1rem 0;
+  padding: 2rem 0 1.5rem 0;
 }
 
-.col-left-text span {
-  display: block;
-  font-size: 1rem;
-  color: rgb(74, 74, 74);
+.news-left span {
   line-height: 1.35;
+  font-size: 1rem;
 }
 
 #author {
@@ -145,35 +127,51 @@ nav span {
   display: block;
   margin-top: 1.75rem;
   font-weight: bold;
-  color: rgb(74, 74, 74);
-
 }
 /**************Right***************/
 
-.col-right {
-  width: 40%;
-  height: auto;
-  display: inline-flex;
+.news-right {
   border-left: 1px solid rgb(216, 216, 216);
-  padding: 0 2.5rem;
+  display: inline-flex;
   flex-direction: column;
 }
 
-.col-right-1 {
+.news-right-1st, .news-right-2nd, .news-right-3rd {
   display: inline-flex;
   align-items: center;
   flex-direction: row;
   width: 100%;
 }
 
-.col-right-1 img {
-  width: 35%;
-  height: 35%;
-  padding: 2rem 0;
+.news-right-1st img, .news-right-2nd img, .news-right-3rd img {
+  width: 30%;
+  height: 30%;
+  padding: 1rem;
 }
 
-.col-right-text {
-  display: block;
-  font-size: 0.5rem;
-
+.news-right-1st {
+  margin-top: 1rem;
 }
+
+.news-right-3rd {
+  background-color: rgb(216, 216, 216);
+}
+
+/*styles for text*/
+.news-right-text {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+.news-right-text h3 {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.news-right-text span {
+  font-size: 1rem;
+  margin: 0.6rem 0 1.75rem 0;
+}
+
+.news-right-text a {color: royalblue;}

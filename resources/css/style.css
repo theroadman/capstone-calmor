@@ -5,6 +5,27 @@
 }
 
 /**************FOR WHOLE WEB**************/
+h1, h2, h3, h4 {
+  color: rgb(74, 74, 74);
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+span {
+  color: rgb(74, 74, 74);
+  font-size: 1rem;
+}
 
 /*************************HEADER********************/
 
@@ -32,13 +53,6 @@ nav span {
   margin: 0 1rem;
 }
 
-.news-left h2, .news-left span,
-.news-right-text h3, .news-right-text span,
-#author, .banner-right span, .banner-right h1 {
-  color: rgb(74, 74, 74);
-}
-
-
 /*************************BANNER********************/
 
 .banner {
@@ -61,9 +75,7 @@ nav span {
 }
 
 .banner-right h1 {
-  font-size: 2.5rem;
   padding-bottom: 1rem;
-  font-weight: bold;
 }
 
 .banner-right span {
@@ -111,25 +123,23 @@ nav span {
 }
 
 .news-left h2 {
-  font-size: 2rem;
   font-family: 'Roboto', sans-serif;
-  font-weight: bold;
   padding: 2rem 0 1.5rem 0;
 }
 
 .news-left span {
   line-height: 1.35;
-  font-size: 1rem;
 }
 
 #author {
   font-size: 0.75rem;
   display: block;
   margin-top: 1.75rem;
+  color: rgb(74, 74, 74);
   font-weight: bold;
 }
-/**************Right***************/
 
+/**************Right***************/
 .news-right {
   border-left: 1px solid rgb(216, 216, 216);
   display: inline-flex;
@@ -139,18 +149,17 @@ nav span {
 .news-right-1st, .news-right-2nd, .news-right-3rd {
   display: inline-flex;
   align-items: center;
-  flex-direction: row;
-  width: 100%;
 }
 
 .news-right-1st img, .news-right-2nd img, .news-right-3rd img {
-  width: 30%;
-  height: 30%;
+  width: 31%;
+  height: 31%;
   padding: 1rem;
 }
 
 .news-right-1st {
   margin-top: 1rem;
+  border-bottom: 2px double rgb(216, 216, 216);
 }
 
 .news-right-3rd {
@@ -164,14 +173,79 @@ nav span {
   padding: 0 1rem;
 }
 
-.news-right-text h3 {
-  font-size: 1.75rem;
-  font-weight: bold;
-}
-
 .news-right-text span {
-  font-size: 1rem;
   margin: 0.6rem 0 1.75rem 0;
 }
 
 .news-right-text a {color: royalblue;}
+
+/******************COURSES *********************/
+
+.courses {
+  background-color: rgb(240, 240, 240);
+  padding: 2rem;
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.courses h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.courses-wrap {
+  width: 90%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.courses img {
+  width: 100%;
+  margin: 0 2rem 1rem 0;
+}
+
+.courses-1st-column {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.courses-2nd-column {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.courses-block {
+  width: 35%;
+  background-color: white;
+  margin: 0.5rem 1rem;
+}
+
+.courses-block h3, .courses-block h4 {
+  width: 100%;
+  padding: 0 0.75rem 0.5rem 1rem;
+}
+
+.courses-block span {
+  width: 90%;
+  display: block;
+  padding: 0 2rem 1rem 1rem;
+}
+
+/**********************************VIDEO*****************************/
+
+.video {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  background-color: rgb(245, 245, 245);
+}
+
+.video h2 {
+  margin: 2rem auto;
+  display: block;
+}

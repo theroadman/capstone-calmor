@@ -72,6 +72,10 @@ nav span {
   margin: 0 1rem;
 }
 
+.brand-mobile {
+  display: none;
+}
+
 /*************************BANNER********************/
 
 .banner {
@@ -228,19 +232,16 @@ nav span {
 
 .courses-block span {
   width: 90%;
-  display: block;
   padding: 0 2rem 1rem 1rem;
 }
 
 /**********************************VIDEO*****************************/
 .video h2 {
   margin: 2rem auto;
-  display: block;
 }
 
 .video h3 {
   margin: 1.5rem 0 1rem 0;
-  display: block;
 }
 
 .video-content-wrap {
@@ -256,7 +257,7 @@ nav span {
   margin: 0 1rem 3rem 1.5rem;
 }
 
-.video-col-video {
+.video-col-video, .video h3, .video h2, .courses-block span {
   display: block;
 }
 
@@ -293,4 +294,22 @@ footer {
 
 footer span, .footer-right {
   padding: 1rem 2rem;
+}
+
+/*************************************************
+                  MEDIA QUORY
+*************************************************/
+
+@media only screen and (max-width: 580px) {
+  .brand, header span, nav, .banner-left {
+    display: none;
+  }
+
+  .brand-mobile {
+    width: 100%;
+    height: 4rem;
+    display: inline-flex;
+    justify-content: space-around;
+  }
+
 }

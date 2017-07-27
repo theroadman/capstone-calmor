@@ -35,6 +35,18 @@ footer, .video, .news {
   background-color: rgb(216, 216, 216);
 }
 
+.video-col-right, .news-right, .news-right-text, .courses,
+.courses-wrap, .video {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+header, footer, .video-col-video video, .video-content-wrap,
+.video, .banner, .news, .courses img, .courses-block h3,
+.courses-block h4 {
+  width: 100%;
+}
+
 /*************************HEADER********************/
 
 header {
@@ -42,7 +54,6 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 4rem;
-  width: 100%;
   border: none;
 }
 
@@ -64,7 +75,6 @@ nav span {
 /*************************BANNER********************/
 
 .banner {
-  width: 100%;
   height: auto;
   display: inline-flex;
   align-items: center;
@@ -109,7 +119,6 @@ nav span {
 /*****************************NEWS block ***************************/
 
 .news {
-  width: 100%;
   display: inline-flex;
 }
 
@@ -148,8 +157,6 @@ nav span {
 /**************Right***************/
 .news-right {
   border-left: 1px solid rgb(216, 216, 216);
-  display: inline-flex;
-  flex-direction: column;
 }
 
 .news-right-1st, .news-right-2nd, .news-right-3rd {
@@ -170,8 +177,6 @@ nav span {
 
 /*styles for text*/
 .news-right-text {
-  display: inline-flex;
-  flex-direction: column;
   padding: 0 1rem;
 }
 
@@ -186,9 +191,7 @@ nav span {
 .courses {
   background-color: rgb(235, 235, 235);
   padding: 2rem;
-  display: inline-flex;
   align-items: center;
-  flex-direction: column;
 }
 
 .courses h2 {
@@ -199,24 +202,16 @@ nav span {
 
 .courses-wrap {
   width: 90%;
-  display: inline-flex;
-  flex-direction: column;
   justify-content: center;
   margin: 0 auto;
   padding-bottom: 2rem;
 }
 
 .courses img {
-  width: 100%;
   margin: 0 2rem 1rem 0;
 }
 
-.courses-1st-column {
-  display: inline-flex;
-  justify-content: center;
-}
-
-.courses-2nd-column {
+.courses-1st-column, .courses-2nd-column {
   display: inline-flex;
   justify-content: center;
 }
@@ -228,7 +223,6 @@ nav span {
 }
 
 .courses-block h3, .courses-block h4 {
-  width: 100%;
   padding: 0 0.75rem 0.5rem 1rem;
 }
 
@@ -239,13 +233,6 @@ nav span {
 }
 
 /**********************************VIDEO*****************************/
-
-.video {
-  width: 100%;
-  display: inline-flex;
-  flex-direction: column;
-}
-
 .video h2 {
   margin: 2rem auto;
   display: block;
@@ -257,7 +244,6 @@ nav span {
 }
 
 .video-content-wrap {
-  width: 100%;
   display: inline-flex;
 }
 
@@ -274,16 +260,7 @@ nav span {
   display: block;
 }
 
-.video-col-video video {
-  width: 100%;
-}
-
 /*Right column*/
-.video-col-right {
-  display: inline-flex;
-  flex-direction: column;
-}
-
 .video-right-1st, .video-right-2nd {
   display: inline-flex;
   align-items: center;
@@ -297,8 +274,6 @@ nav span {
 
 /*styles for text*/
 .news-right-text {
-  display: inline-flex;
-  flex-direction: column;
   padding: 0 1rem;
 }
 
@@ -310,7 +285,6 @@ nav span {
 /*******************************footer****************************************/
 
 footer {
-  width: 100%;
   height: 5rem;
   border-top: 1px solid rgb(216, 216, 216);
   display: inline-flex;

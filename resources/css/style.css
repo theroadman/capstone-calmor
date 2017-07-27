@@ -27,6 +27,14 @@ span {
   font-size: 1rem;
 }
 
+footer, .video, .news {
+  background-color: rgb(245, 245, 245);
+}
+
+.video-right-1st, .banner, .news-right-3rd {
+  background-color: rgb(216, 216, 216);
+}
+
 /*************************HEADER********************/
 
 header {
@@ -58,7 +66,6 @@ nav span {
 .banner {
   width: 100%;
   height: auto;
-  background-color: rgb(216, 216, 216);
   display: inline-flex;
   align-items: center;
   font-family: 'Roboto', sans-serif;
@@ -104,7 +111,6 @@ nav span {
 .news {
   width: 100%;
   display: inline-flex;
-  background-color: rgb(245, 245, 245);
 }
 
 .news-left {
@@ -162,10 +168,6 @@ nav span {
   border-bottom: 2px double rgb(216, 216, 216);
 }
 
-.news-right-3rd {
-  background-color: rgb(216, 216, 216);
-}
-
 /*styles for text*/
 .news-right-text {
   display: inline-flex;
@@ -182,7 +184,7 @@ nav span {
 /******************COURSES *********************/
 
 .courses {
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(235, 235, 235);
   padding: 2rem;
   display: inline-flex;
   align-items: center;
@@ -242,10 +244,79 @@ nav span {
   width: 100%;
   display: inline-flex;
   flex-direction: column;
-  background-color: rgb(245, 245, 245);
 }
 
 .video h2 {
   margin: 2rem auto;
   display: block;
+}
+
+.video h3 {
+  margin: 1.5rem 0 1rem 0;
+  display: block;
+}
+
+.video-content-wrap {
+  width: 100%;
+  display: inline-flex;
+}
+
+.video-col-left {
+  width: 60%;
+  height: auto;
+  justify-content: center;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin: 0 1rem 3rem 1.5rem;
+}
+
+.video-col-video {
+  display: block;
+}
+
+.video-col-video video {
+  width: 100%;
+}
+
+/*Right column*/
+.video-col-right {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.video-right-1st, .video-right-2nd {
+  display: inline-flex;
+  align-items: center;
+}
+
+.video-right-1st img, .video-right-2nd img {
+  width: 38%;
+  height: 38%;
+  padding: 1rem;
+}
+
+/*styles for text*/
+.news-right-text {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+.news-right-text span {
+  margin: 0.6rem 0 1.75rem 0;
+}
+
+
+/*******************************footer****************************************/
+
+footer {
+  width: 100%;
+  height: 5rem;
+  border-top: 1px solid rgb(216, 216, 216);
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+footer span, .footer-right {
+  padding: 1rem 2rem;
 }

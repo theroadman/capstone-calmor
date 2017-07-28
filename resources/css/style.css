@@ -72,7 +72,7 @@ nav span {
   margin: 0 1rem;
 }
 
-.brand-mobile {
+.brand-mobile, .banner-mobile, .mobile-img {
   display: none;
 }
 
@@ -301,7 +301,11 @@ footer span, .footer-right {
 *************************************************/
 
 @media only screen and (max-width: 580px) {
-  .brand, header span, nav, .banner-left {
+  .brand, header span, nav, .banner-left,
+  .desktop-img, .news-left, .courses-block span,
+  .courses-block h4, .courses img,
+  .video-col-right, .video h3, .video span,
+  .footer-right {
     display: none;
   }
 
@@ -311,5 +315,116 @@ footer span, .footer-right {
     display: inline-flex;
     justify-content: space-around;
   }
+
+  .banner-mobile {
+    display: block;
+    width: 100%;
+    height: 180px;
+    background-color: rgb(116, 116, 116);
+  }
+
+  .banner-right {
+    padding: 2rem 1rem;
+  }
+
+  .banner-right h1, .banner-right span {
+    padding-bottom: 2rem;
+    line-height: 1.5;
+  }
+
+  .button {
+    margin: 2rem auto;
+    background-color: rgb(165, 165, 165);
+  }
+
+  .news-right-1st, .news-right-2nd, .news-right-3rd {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .mobile-img {
+    display: block;
+    width: 100%;
+
+  }
+
+  .news-right-1st img, .news-right-2nd img, .news-right-3rd img {
+    width: 90%;
+    height: 100%;
+    padding: 1rem;
+  }
+
+  .news-right-text {
+    width: 80%;
+    padding-left: 2rem;
+  }
+
+  .news-right-text a{
+    padding-bottom: 1rem;
+  }
+
+  .news-right-3rd {
+    background-color: inherit;
+    }
+
+
+/*----COURSES------*/
+.courses {
+  background-color: rgb(245, 245, 245);
+  border-top: 1px solid rgb(175, 175, 175);
+  border-bottom: 1px solid rgb(175, 175, 175);
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.courses-wrap {
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  flex-direction: column;
+  width: 100%;
+}
+
+.courses-1st-column, .courses-2nd-column {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.courses-block {
+  background-color: rgb(215, 215, 215);
+  padding: 2rem;
+  flex-shrink: 0;
+  width: 81%;
+  display: block;
+}
+
+.courses-block h3 {
+  padding: 0;
+  margin: 0;
+}
+
+/*-------------VIDEO--------------------*/
+
+.video-col-left {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0 0 1.5rem;
+}
+
+/*-------------FOOTER-----------------------*/
+
+footer {
+  margin: 0;
+}
+
+footer span {
+  padding: 2rem;
+}
 
 }
